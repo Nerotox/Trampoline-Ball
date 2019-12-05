@@ -4,17 +4,15 @@ namespace Level
 {
     public class CollisionHandler : MonoBehaviour
     {
-    
         public BoxCollider2D finishFlagCollider2D;
         public EdgeCollider2D leftEdgeCollider2D;
         public EdgeCollider2D rightEdgeCollider2D;
         public EdgeCollider2D bottomEdgeCollider2D;
         public EdgeCollider2D topEdgeCollider2D;
-    
+
         // Start is called before the first frame update
         void Start()
         {
-        
         }
 
         // Update is called once per frame
@@ -28,6 +26,12 @@ namespace Level
             if (other == finishFlagCollider2D)
             {
                 Debug.Log("hit the finish line!");
+                GetComponent<Rigidbody2D>().isKinematic = true;
+                GetComponent<Rigidbody2D>().angularVelocity = 0;
+                GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                
+                
+                
             }
             else if (other == leftEdgeCollider2D || other == rightEdgeCollider2D || other == bottomEdgeCollider2D ||
                      other == topEdgeCollider2D)
