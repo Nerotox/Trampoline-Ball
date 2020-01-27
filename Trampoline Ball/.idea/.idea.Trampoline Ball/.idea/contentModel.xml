@@ -8,8 +8,10 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Level" t="Include">
-            <e p="CollisionHandler.cs" t="Include" />
+            <e p="EdgeCollisionHandler.cs" t="Include" />
+            <e p="FinishCollisionHandler.cs" t="Include" />
             <e p="LevelHandler.cs" t="Include" />
+            <e p="TrampCollisionHandler.cs" t="Include" />
             <e p="TrampolineCreation.cs" t="Include" />
           </e>
           <e p="LevelSelectSceneHandler.cs" t="Include" />

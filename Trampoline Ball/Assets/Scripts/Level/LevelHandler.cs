@@ -57,5 +57,10 @@ namespace Level
             
             Debug.Log("Clicked Pause.");
         }
+
+        public void SelectDeleteButton()
+        {
+            //Implement deletion of game objects while deletion mode is enabled.
+        }
     }
 }
