@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class LevelSelectSceneHandler : MonoBehaviour
 {
     public string backButtonSceneName;
-    public string levelOneSceneName;
+    public string level1SceneName;
+    public string level2SceneName;
+    public string level3SceneName;
+    public string level4SceneName;
+    public string level5SceneName;
+    public string level6SceneName;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +32,34 @@ public class LevelSelectSceneHandler : MonoBehaviour
         SceneManager.LoadScene(backButtonSceneName);
     }
 
-    public void selectLevelOne()
+    public void SelectLevel1()
     {
         Debug.Log("Clicked Level 1");
-        SceneManager.LoadScene(levelOneSceneName);
+        SceneManager.LoadScene(level1SceneName);
+    }
+    public void SelectLevel2()
+    {
+        Debug.Log("Clicked Level 1");
+        SceneManager.LoadScene(level2SceneName);
+    }
+    public void SelectLevel3()
+    {
+        Debug.Log("Clicked Level 1");
+        SceneManager.LoadScene(level3SceneName);
+    }
+    public void SelectLevel4()
+    {
+        Debug.Log("Clicked Level 1");
+        SceneManager.LoadScene(level4SceneName);
+    }
+    public void SelectLevel5()
+    {
+        Debug.Log("Clicked Level 1");
+        SceneManager.LoadScene(level5SceneName);
+    }
+    public void SelectLevel6()
+    {
+        Debug.Log("Clicked Level 1");
+        SceneManager.LoadScene(level6SceneName);
     }
 }
